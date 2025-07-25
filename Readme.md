@@ -1,0 +1,4 @@
+The contact manager project is made with the implementation of the SQLite database, has a fully working database manager class that encapsulates the work of the database and makes it easier to manage it, the project also contains such functions (methods) as adding, deleting, searching and changing contacts. The application works only through the terminal and is the beginning of working with databases.
+
+For compilation I recommend inserting these flags in the terminal (the choice of the C++ standard is up to you):
+g++ contact.cpp databasemanager.cpp contactmanager.cpp application.cpp main.cpp -o contact_app  -lsqlite3  -std=c++20
