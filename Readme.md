@@ -1,4 +1,83 @@
-The contact manager project is made with the implementation of the SQLite database, has a fully working database manager class that encapsulates the work of the database and makes it easier to manage it, the project also contains such functions (methods) as adding, deleting, searching and changing contacts. The application works only through the terminal and is the beginning of working with databases.
+<h1 align="center">📇 Terminal Contact Manager</h1>
 
-For compilation I recommend inserting these flags in the terminal (the choice of the C++ standard is up to you):
-g++ contact.cpp databasemanager.cpp contactmanager.cpp application.cpp main.cpp -o contact_app  -lsqlite3  -std=c++20
+<p align="center">
+  <img src="https://media.giphy.com/media/3oKIPwoeGErMmaI43C/giphy.gif" width="250" alt="Terminal Magic"/>
+</p>
+
+<p align="center"><b>Manage your contacts from the terminal with sleek C++ power, featuring embedded SQLite3 for persistent storage.</b></p>
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Requirements
+- C++17 or higher
+- g++ or compatible compiler
+- SQLite3 development library
+
+---
+
+### 🛠️ Build & Run
+
+```bash
+g++ -std=c++17 application.cpp contact.cpp contactmanager.cpp databasemanager.cpp -lsqlite3 -o ContactApp
+./ContactApp
+```
+---
+
+### 🧩 Features
+
+Option	Functionality
+- 0	 - Exit
+- 1	 - Add a new contact
+- 2	 - Display all contacts
+- 3	 - Search contact by ID
+- 4	 - Edit contact information
+- 5	 - Delete contact
+
+---
+
+✔️ Contacts are saved automatically to a SQLite3 database.
+
+---
+
+### 📸 Sample Interaction
+```bash
+___________________MENU_______________
+What do you want to do?
+0 - Exit
+1 - Add new contact
+2 - Show all contacts
+3 - Find contact
+4 - Change contact
+5 - Delete contact
+```
+
+⬇️
+```
+Enter name of contact: Alice
+Enter cogname of contact: Johnson
+Enter number of contact: 123456789
+Enter email of contact: alice@example.com
+```
+---
+
+### 💡 Future Enhancements
+
+- [ ] Sort and filter contacts
+
+- [ ] Export to JSON/CSV
+
+- [ ] GUI interface using Qt or SFML
+
+- [ ] Dark-mode terminal themes with pixel-art banners 😎
+
+---
+
+### 👩‍💻 Created By
+
+SharapAid — C++ enthusiast and pixel-powered problem solver 🔗 GitHub SharapAid
+
+---
+
+<p align="center">🛸 Powered by caffeine, compiled in chaos.</p>
